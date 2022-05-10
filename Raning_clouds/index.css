@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+
+}
+.container{
+    position: relative;
+    height: 400px;
+    /* background-color: red; */
+    border-bottom: 2px solid white;
+
+}
+.cloud{
+    position: relative;
+    top: 50px;
+    width: 320px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.cloud::before{
+    position: absolute;
+    top: -50px;
+    content: "";
+    left: 40px;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 90px 0 0 30px white;
+
+}
+.rain{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+
+}
+.rain span{
+    position: relative;
+    bottom: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(246, 238, 238);
+    margin: 0 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: animate 5s linear infinite;
+    -webkit-animation: animate 5s linear infinite;
+    animation-duration: calc(10s/ var(--i));
+    transform-origin: bottom;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) scale(1);
+        -webkit-transform: translateY(0) scale(1);
+        -moz-transform: translateY(0) scale(1);
+        -ms-transform: translateY(0) scale(1);
+        -o-transform: translateY(0) scale(1);
+}
+70%{
+    transform: translateY(298px) scale(1);
+    -webkit-transform: translateY(298px) scale(1);
+    -moz-transform: translateY(298px) scale(1);
+    -ms-transform: translateY(298px) scale(1);
+    -o-transform: translateY(298px) scale(1);
+}
+100%{
+    transform: translateY(298px) scale(0);
+    -webkit-transform: translateY(298px) scale(0);
+    -moz-transform: translateY(298px) scale(0);
+    -ms-transform: translateY(298px) scale(0);
+    -o-transform: translateY(298px) scale(0);
+}
+}
+
