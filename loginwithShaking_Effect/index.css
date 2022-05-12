@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: blueviolet;
+}
+.wrapper{
+    background: white;
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    
+
+
+}
+.wrapper form{
+    margin: 40px 0;
+
+}
+form .field{
+ margin-bottom: 20px;
+ width: 100%;
+ 
+}
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+    -webkit-animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%,100%{
+        margin-left: 0;
+    }
+    20%,80%{
+        margin-left: -12px;
+    }
+    40%,60%{
+        margin-left: 12px;
+    }
+    
+}
+form .field .input-area{
+    position: relative;
+
+}
+form input{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 45px;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-bottom-width: 2px;
+    outline: none;
+
+}
+form .field.error input{
+    border-color: #dc3545;
+
+    
+}
+form input::placeholder{
+
+    color: #bfbfbf;
+    font-size: 17px;
+
+}
+form .field i{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    -webkit-transform:translateY(-50%) ;
+    -moz-transform:translateY(-50%) ;
+    -ms-transform:translateY(-50%) ;
+    -o-transform:translateY(-50%) ;
+    font-size: 18px;
+    pointer-events: none;
+
+
+}
+form .field .icon{
+    left:15px;
+    color: #bfbfbf;
+}
+form .field .error-icon{
+   right: 15px;
+   color: #dc3545;
+}
+form .field .error-txt{
+    color: #dc3545;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: 600;
+  
+}
+form .field .error{
+    
+    display: none;
+}
+form .field.error .error{
+   
+    display: block;
+
+}
+form .pass-link{
+    text-align: left;
+    margin-top: -10px;
+}
+.wrapper a{
+    color: #5372F0;
+    text-decoration: none;
+
+}
+.wrapper a:hover{
+    text-decoration: underline;
+
+}
+form input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    background: #5372F0;
+    letter-spacing: 1.5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+}
+input[type="submit"]:hover{
+    background: #bfbfbf;
+
+}
