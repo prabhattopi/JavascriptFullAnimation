@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+   overflow: hidden;
+
+}
+section{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     background:
+     url("https://media.istockphoto.com/photos/moon-stars-and-planet-earth-outer-space-background-starry-night-sky-picture-id1179852506?k=20&m=1179852506&s=170667a&w=0&h=zG0mAISW5QU9ns4QUqUfNElHEun2QpFGBvn5lsqNRK8=") no-repeat center center/cover;
+
+     
+}
+section{
+    animation: animate 5s linear infinite;
+    -webkit-animation: animate 50s linear infinite;
+
+}
+@keyframes animate {
+    0%,100%{
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+}
+50%{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+    
+}
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,1);
+    animation: animat 3s linear infinite;
+    -webkit-animation: animat 3s linear infinite;
+}
+span::before{
+    content:"";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+@keyframes animat {
+    0%{
+        transform: rotate(315deg) translateX(0);
+        -webkit-transform: rotate(315deg) translateX(0);
+        -moz-transform: rotate(315deg) translateX(0);
+        -ms-transform: rotate(315deg) translateX(0);
+        -o-transform: rotate(315deg) translateX(0);
+        opacity: 1;
+}
+70%{
+    opacity: 1;
+}
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        -webkit-transform: rotate(315deg) translateX(-1000px);
+        -moz-transform: rotate(315deg) translateX(-1000px);
+        -ms-transform: rotate(315deg) translateX(-1000px);
+        -o-transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+}
+    
+}
+span:nth-child(1){
+    top: 0;
+    right: 0px;
+       left: initial;
+    animation-delay: -0.2s;
+    animation-duration: 1s;
+
+
+
+}
+span:nth-child(2){
+    top: 0;
+    right: 80px;
+ 
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+
+
+
+}
+span:nth-child(3){
+    top: 80;
+    right: 0px;
+ 
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+
+
+
+}
+span:nth-child(4){
+    top: 0;
+    right: 400px;
+ 
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+
+
+
+}
+span:nth-child(5){
+    top: 0;
+    right: 400px;
+ 
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+
+
+
+}
+span:nth-child(6){
+    top: 0;
+    right: 600px;
+ 
+    animation-delay: 1s;
+    animation-duration: 3s;
+
+
+
+}
+span:nth-child(7){
+    top: 300;
+    right: 0px;
+ 
+    animation-delay: 1.2s;
+    animation-duration: 3.5s;
+
+
+
+}

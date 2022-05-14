@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg,#4e65ff,#92effd);
+}
+.navigation{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: white;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s,width 0.5s ease;
+    -webkit-transition: height 0.5s,width 0.5s ease;
+    -moz-transition: height 0.5s,width 0.5s ease;
+    -ms-transition: height 0.5s,width 0.5s ease;
+    -o-transition: height 0.5s,width 0.5s ease;
+    transition-delay: 0s , 0.75s;
+    overflow: hidden;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    
+}
+.navigation.active{
+    padding: 20px;
+}
+.navigation.active{
+    width: 300px;
+    height: 400px;
+    transition: width 0.5s,height 0.5s ease;
+    -webkit-transition: width 0.5s,height 0.5s ease;
+    -moz-transition: width 0.5s,height 0.5s ease;
+    -ms-transition: width 0.5s,height 0.5s ease;
+    -o-transition: width 0.5s,height 0.5s ease;
+    transition-delay: 0s , 0.75s;
+}
+.navigation .userBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+.navigation .userBx .username{
+    white-space: nowrap;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.navigation.active .userBx{
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+.navigation .userBx .img{
+    position: relative;
+    min-width: 60px;
+    min-height: 60px;
+    background: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+
+}
+.navigation .userBx .img img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   object-fit: cover;
+}
+.navigation .menuToggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background: red; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.navigation .menuToggle::before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background:rgb(74, 70, 70);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 0 10px #555;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.navigation .menuToggle::after{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background:rgb(74, 70, 70);
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.navigation.active .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+    -webkit-transform: translateY(0px) rotate(45deg);
+    -moz-transform: translateY(0px) rotate(45deg);
+    -ms-transform: translateY(0px) rotate(45deg);
+    -o-transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+}
+.navigation.active .menuToggle::after{
+    transform: translateY(0px) rotate(-45deg);
+    -webkit-transform: translateY(0px) rotate(-45deg);
+    -moz-transform: translateY(0px) rotate(-45deg);
+    -ms-transform: translateY(0px) rotate(-45deg);
+    -o-transform: translateY(0px) rotate(-45deg);
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top:60px;
+    padding: 20px;
+    border-top: 1px solid rgb(226, 208, 208);
+    /* overflow: hidden; */
+
+}
+.menu li{
+    list-style-type:none;
+}
+.menu li a{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+    text-decoration: none;
+    margin: 20px 0px;
+    font-size: 1em;
+    color: #555;
+
+   
+}
+.menu li a:hover{
+    color: #4e65ff;
+}
+.menu li a ion-icon{
+    font-size: 1.5em;
+}
