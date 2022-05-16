@@ -4,6 +4,59 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* :root{
+:root{
+    --poppins-font:"poppins";
+    --orange-soda-color: #f64b3c;
+    --light-color: white;
+    --light-gray: #clae9f;
+    --dark-color: #222;
+    --transition:all 300ms ease-in-out;
+    --gradient:linear-gradient(rgba(246,75,60,0.1),rgba(246,75,60,0.1));
+
+
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     
-} */
+}
+
+html{
+    font-size: 10px;
+
+}
+body{
+    font-family: var(--poppins-font);
+    line-height: 1.6;
+    font-size: 2rem;
+
+
+}
+img{
+    width: 100%;
+    display: block;
+
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+
+
+}
+h1,h2,h3,h4{
+    margin-top: 0;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
