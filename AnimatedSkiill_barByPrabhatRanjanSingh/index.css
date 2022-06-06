@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+.skills-bar {
+  width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.skills-bar .bar {
+  margin: 20px 0px;
+}
+.skills-bar .bar:first-child {
+  margin-top: 0px;
+}
+.skills-bar .bar .info {
+  margin-bottom: 20px;
+}
+.skills-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 600;
+}
+.skills-bar .bar .progress-line {
+ position: relative;
+ height: 10px;
+ width: 100%;
+ background: #f0f0f0;
+ border-radius: 10px;
+ box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),    0px 1px rgba(255, 255, 255, 0.8);
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+ transform: scaleX(0);
+ -webkit-transform: scaleX(0);
+ -moz-transform: scaleX(0);
+ -ms-transform: scaleX(0);
+ -o-transform: scaleX(0);
+ transform-origin: left;
+ animation:animate 1s cubic-bezier(1,0,0.5,1) ;
+ -webkit-animation:animate 1s cubic-bezier(1,0,0.5,1) forwards ;
+ transition: 3s ease-in-out;
+ -webkit-transition: 3s ease-in-out;
+ -moz-transition: 3s ease-in-out;
+ -ms-transition: 3s ease-in-out;
+ -o-transition: 3s ease-in-out;
+}
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #6665ae;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: scaleX(0);
+ -webkit-transform: scaleX(0);
+ -moz-transform: scaleX(0);
+ -ms-transform: scaleX(0);
+ -o-transform: scaleX(0);
+ transform-origin: left;
+ animation:animate 1s cubic-bezier(1,0,0.5,1) ;
+ 
+ -webkit-animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards ;
+ transition: 3s ease-in-out;
+ -webkit-transition: 3s ease-in-out;
+ -moz-transition: 3s ease-in-out;
+ -ms-transition: 3s ease-in-out;
+ -o-transition: 3s ease-in-out;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+}
+    
+}
+.progress-line.html span{
+    width: 80%;
+}
+.progress-line.css span{
+    width: 100%;
+}
+.progress-line.jquery span{
+    width: 50%;
+}
+.progress-line.python span{
+    width: 40%;
+}
+
+
+
+
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -10px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  animation: showText 0.5s 1.5s linear forwards;
+  -webkit-animation: showText 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after {
+  position: absolute;
+
+  right: 0;
+  top: -23px;
+  color: #fff;
+  background: #000;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  -o-border-radius:3px;
+  opacity: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+    
+}
+.progress-line.html span::after{
+    content: "80%";
+}
+.progress-line.css span::after{
+    content: "100%";
+}
+.progress-line.jquery span::after{
+    content: "50%";
+}
+.progress-line.python span::after{
+    content: "40%";
+}
+
+
+
