@@ -12,6 +12,7 @@ body{
     background: #222;
 }
 .container{
+    left: -180px;
     position: relative;
 
  display: flex;
@@ -83,4 +84,64 @@ body{
     20px 0 #888,
     24px 0 #999;
   
+}
+.vapour{
+    position: relative;
+    display: flex;
+   
+    z-index: 1;
+    padding: 0 10px;
+}
+.vapour span{
+    position: relative;
+    bottom: 50px;
+    left:20rem;
+    display: block;
+    margin: 0 2px 60px;
+    min-width: 8px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: animate 5s linear infinite;
+    -webkit-animation: animatee 5s linear infinite;
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    animation-delay: calc(var(--j) * -0.5s);
+}
+@keyframes animatee {
+    0%{
+      transform: translateY(0) scaleX(1);
+      -webkit-transform: translateY(0) scaleX(1);
+      -moz-transform: translateY(0) scaleX(1);
+      -ms-transform: translateY(0) scaleX(1);
+      -o-transform: translateY(0) scaleX(1);
+      opacity: 0;
+    
+}
+15%{
+    opacity: 1;
+}
+    50%{
+      transform: translateY(-150px) scaleX(5);
+      -webkit-transform: translateY(-150px) scaleX(5);
+      -moz-transform: translateY(-150px) scaleX(5);
+      -ms-transform: translateY(-150px) scaleX(5);
+      -o-transform: translateY(-150px) scaleX(5);
+}
+95%{
+    opacity: 0;
+}
+    100%{
+      transform: translateY(-300px) scaleX(10);
+      -webkit-transform: translateY(-300px) scaleX(10);
+      -moz-transform: translateY(-300px) scaleX(10);
+      -ms-transform: translateY(-300px) scaleX(10);
+      -o-transform: translateY(-300px) scaleX(10);
+}
+    
 }
