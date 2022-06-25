@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Guessing GaME</title>
+    <link
+      rel="shortcut icon"
+      href="https://miro.medium.com/max/300/0*e7Ey7PuY8ePKPGg7"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Nuosu+SIL&family=Oswald:wght@300;600&family=Poppins:wght@100;200;300&family=Radio+Canada:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="indes.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Guess the Word</h1>
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1" />
+        <div class="inputs">
+          <!-- TODO -->
+        </div>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <p class="guess-left">Remaining Guesses: <span></span></p>
+          <p class="wrong-letter">Wrong letters: <span></span></p>
+        </div>
+        <button class="reset-btn">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="Words.js"></script>
+<script src="index.js"></script>
