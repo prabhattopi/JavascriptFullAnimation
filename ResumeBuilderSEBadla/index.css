@@ -28,7 +28,7 @@ margin: 50px;
 }
 .container .left_Side{
     position: relative;
-    background: #003147;
+    background: #e5eef2;
     padding: 40px;
     
 
@@ -43,26 +43,28 @@ margin: 50px;
 }
 .profileText .imgBx{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    overflow: hidden;
+overflow: hidden;
 }
 .profileText .imgBx img{
-    position: absolute;
-    top: 0;
+    position:absolute;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 
+    
+   object-fit: cover;
+   
 }
 .profileText h2{
-    color: #fff;
+    color: rgb(42, 40, 40);
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -71,18 +73,21 @@ margin: 50px;
     line-height: 1.4em;
 }
 .profileText span{
-   color: #fff;
+   color: rgb(34, 32, 32);
     font-size: 0.8em;
-    font-weight: 300;
+    font-weight: 700;
 
 
 }
 .contactInfo{
     padding-top: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px 50px;
 
 }
 .title{
-    color: #fff;
+    color: rgb(46, 44, 44);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -109,33 +114,33 @@ margin: 50px;
 
 }
 .contactInfo ul li span{
-    color: #fff;
+    color: rgb(30, 29, 29);
     font-weight: 300;
 
 
 }
 .contactInfo.education li{
     margin-bottom: 15px;
-
+pointer-events: ;
 
 }
 .contactInfo.education h5{
     color: #03a9f4;
-    font-weight: 500;
+    font-weight: 600;
 }
 .contactInfo.education h4:nth-child(2){
-    color: #fff;
+    color: rgb(34, 33, 33);
     font-weight: 500;
 
 }
 .contactInfo.education h4{
-    color: #fff;
+    color: rgb(46, 44, 44);
     font-weight:300;
 
 }
 .container .right_Side{
     position: relative;
-    background: #fff;
+    background: rgb(240, 238, 238);
     padding: 40px;
 
 
@@ -161,7 +166,7 @@ p{
 }
 .rot .we{
     font-size: 20px;
-    color: rgb(123, 118, 118);
+    color: rgb(37, 36, 36);
     font-weight: bold;
     
 }
@@ -200,5 +205,5 @@ p{
 }
 .Anchor:hover{
     text-decoration: underline;
-    color: white;
+    color: rgb(27, 26, 26);
 }
